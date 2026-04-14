@@ -1,2 +1,2 @@
-# Arun's portfolio
+# Arun's Portfolio
 Arun Srinivasan's Portfolio
