@@ -1,67 +1,106 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
     margin: 0;
-    background: #f7f9fc;
-    color: #1f2937;
+    font-family: Inter, system-ui;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 .container {
     width: 85%;
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
-    padding: 40px 0;
+    padding: 80px 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #020617;
+    padding: 15px 0;
+    border-bottom: 1px solid #1e293b;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: auto;
+}
+
+nav a {
+    margin-left: 20px;
+    color: #94a3b8;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
 }
 
 header {
-    background: #111827;
-    color: white;
+    background: radial-gradient(circle, #1e293b, #020617);
     text-align: center;
-    padding: 60px 20px;
+    padding: 120px 20px;
 }
 
-h1 {
-    margin-bottom: 10px;
+.hero h1 {
+    font-size: 40px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero p {
+    margin-top: 20px;
+    color: #94a3b8;
+}
+
+.cta {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background: #3b82f6;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
 }
 
 h2 {
-    margin-bottom: 20px;
-    color: #111827;
+    margin-bottom: 40px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .card {
-    background: white;
+    background: #020617;
     padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border-radius: 12px;
+    border: 1px solid #1e293b;
 }
 
-.card span {
-    color: gray;
-    font-size: 14px;
+.case-box {
+    background: #020617;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #1e293b;
 }
 
-ul {
-    padding-left: 20px;
-}
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.grid div {
-    background: white;
-    padding: 12px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+.contact a {
+    color: #3b82f6;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #111827;
-    color: white;
+    background: #020617;
+    border-top: 1px solid #1e293b;
 }
